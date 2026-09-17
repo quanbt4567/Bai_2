@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="#">
+        <div class="text-center">
+            <div class="logo">
+                <div class="logo-top">Jackson</div>
+                <hr class="logo-hr">
+                <div class="logo-bottom">Electronics</div>
+            </div>
+            <h2>Registration Form</h2>
+            <p class="sub-heading">Register your Jackson Electronics product here</p>
+        </div>
+
+        <table>
+            <tr>
+                <td class="col-label">
+                    <label for="firstName">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="lastName" class="label-inline">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="address1">Address #1:</label>
+                </td>
+                <td>
+                    <input type="text" id="address1" name="address1" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="address2">Address #2:</label>
+                </td>
+                <td>
+                    <input type="text" id="address2" name="address2" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="city">City:</label>
+                </td>
+                <td>
+                    <input type="text" id="city" name="city" required>
+                    <label for="state" class="label-inline">State:</label>
+                    <input type="text" id="state" name="state" required>
+                    <label for="zip" class="label-inline">Zip:</label>
+                    <input type="text" id="zip" name="zip" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="country">Country:</label>
+                </td>
+                <td>
+                    <input type="text" id="country" name="country" value="United States" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr class="divider">
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="product">Product:</label>
+                </td>
+                <td>
+                    <select id="product" name="product" required>
+                        <option value="ScanMaster">ScanMaster</option>
+                        <option value="ScanMasterII">ScanMaster II</option>
+                        <option value="LaserPrint1000">LaserPrint 1000</option>
+                        <option value="LaserPrint5000">LaserPrint 5000</option>
+                        <option value="PrintScan150">Print/Scan 150</option>
+                        <option value="PrintScan250">Print/Scan 250</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="datePurchased">Date Purchased:</label>
+                </td>
+                <td>
+                    <input type="text" id="datePurchased" name="datePurchased" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label">
+                    <label for="serialNumber">Serial #:</label>
+                </td>
+                <td>
+                    <input type="text" id="serialNumber" name="serialNumber" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label top-label">Used for:</td>
+                <td>
+                    <span class="col-item col-item-left">
+                        <input type="radio" id="used_home" name="usedFor" value="Home" class="custom-check">
+                        <label for="used_home" class="radio-label">Home</label>
+                    </span>
+                    <span class="col-item">
+                        <input type="radio" id="used_edu" name="usedFor" value="EducationalInstitution"
+                            class="custom-check">
+                        <label for="used_edu" class="radio-label">Educational Institution</label>
+                    </span><br>
+                    <span class="col-item col-item-left">
+                        <input type="radio" id="used_biz" name="usedFor" value="Business" class="custom-check" checked>
+                        <label for="used_biz" class="radio-label">Business</label>
+                    </span>
+                    <span class="col-item">
+                        <input type="radio" id="used_other" name="usedFor" value="Other" class="custom-check">
+                        <label for="used_other" class="radio-label">Other</label>
+                    </span><br>
+                    <span class="col-item col-item-left">
+                        <input type="radio" id="used_gov" name="usedFor" value="Government" class="custom-check">
+                        <label for="used_gov" class="radio-label">Government</label>
+                    </span>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label top-label">System (check all that apply):</td>
+                <td>
+                    <span class="col-item col-item-left">
+                        <input type="checkbox" id="sys_win" name="systemType" value="Windows" class="custom-check">
+                        <label for="sys_win">Windows</label>
+                    </span>
+                    <span class="col-item">
+                        <input type="checkbox" id="sys_unix" name="systemType" value="UNIX" class="custom-check">
+                        <label for="sys_unix">UNIX</label>
+                    </span><br>
+                    <span class="col-item col-item-left">
+                        <input type="checkbox" id="sys_mac" name="systemType" value="Macintosh" class="custom-check">
+                        <label for="sys_mac">Macintosh</label>
+                    </span>
+                    <span class="col-item">
+                        <input type="checkbox" id="sys_other_sys" name="systemType" value="Other" class="custom-check">
+                        <label for="sys_other_sys">Other</label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr class="divider">
+                </td>
+            </tr>
+            <tr>
+                <td class="col-label top-label">
+                    <label for="comments">Comments?:</label>
+                </td>
+                <td>
+                    <textarea id="comments" name="comments"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-center btn-row">
+                    <input type="button" value="Click to register">
+                    <input type="button" value="Click to cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13.5px;
+  margin: 0;
+  padding: 6px 0;
+  overflow-x: hidden;
+}
+
+form {
+  background-color: #98cdff;
+  margin: 0 auto;
+  width: 595px;
+  padding-top: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.logo {
+  margin: 0 auto;
+  background-color: #01ffff;
+  display: block;
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 262px;
+  height: 64px;
+  background-image: url("img/samset.png");
+  background-repeat: no-repeat;
+  background-position: 8px -5px;
+  background-size: 46px 46px;
+}
+
+.logo-top {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  text-align: center;
+}
+
+.logo-hr {
+  border: 0;
+  border-top: 2.5px solid #000000;
+  margin: 0;
+}
+
+.logo-bottom {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 18px 0 10px 0;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 13.5px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+table {
+  width: 595px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+td {
+  vertical-align: middle;
+  padding-bottom: 4px;
+}
+
+.col-label {
+  width: 218px;
+  padding-left: 55px;
+  padding-right: 4px;
+  white-space: nowrap;
+  font-size: 13.5px;
+  text-align: left;
+}
+
+.top-label {
+  vertical-align: top;
+  padding-top: 2px;
+}
+
+.label-inline {
+  padding-left: 7px;
+  padding-right: 4px;
+  font-size: 13.5px;
+}
+
+.col-item-left {
+  display: inline-block;
+  width: 124px;
+}
+
+.col-item {
+  display: inline-block;
+  font-size: 13.5px;
+}
+
+.custom-check {
+  margin: 0 4px 0 0;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+input[type="radio"].custom-check {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1.5px solid #7f9db9;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+input[type="radio"].custom-check:checked {
+  border-color: #2e7d32;
+  background: radial-gradient(circle, #2e7d32 38%, #ffffff 38%);
+}
+
+input[type="text"],
+select {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13.5px;
+  height: 20px;
+  padding: 1px 3px;
+  border: 1px solid #7f9db9;
+  background-color: #ffffff;
+}
+
+#firstName,
+#lastName {
+  width: 98px;
+}
+
+#address1,
+#address2 {
+  width: 181px;
+}
+
+#city {
+  width: 126px;
+}
+
+#state {
+  width: 33px;
+}
+
+#zip {
+  width: 60px;
+}
+
+#country {
+  width: 126px;
+}
+
+#product {
+  width: 105px;
+  height: 21px;
+}
+
+#datePurchased,
+#serialNumber {
+  width: 126px;
+}
+
+textarea#comments {
+  width: 308px;
+  height: 80px;
+  resize: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13.5px;
+  border: 1px solid #7f9db9;
+  background-color: #ffffff;
+  display: block;
+}
+
+hr.divider {
+  border: 0;
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #ffffff;
+  margin: 6px 0 8px 55px;
+  width: 476px;
+}
+
+.btn-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+input[type="button"] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 2px 8px;
+  margin: 0 4px;
+  border: 1px solid #7f9db9;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ece9d8 100%);
+  cursor: pointer;
+}
