@@ -31,7 +31,7 @@ form {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 262px;
   height: 64px;
-  background-image: url("samset.png");
+  background-image: url("img/samset.png");
   background-repeat: no-repeat;
   background-position: 8px -6px;
   background-size: 46px 46px;
@@ -96,9 +96,16 @@ td {
 }
 
 .label-inline {
-  padding-left: 7px;
-  padding-right: 4px;
+  padding: 0;
+  margin: 0;
   font-size: 13.5px;
+}
+
+.label-inline-2 {
+  padding: 0;
+  margin: 0;
+  font-size: 13.5px;
+  margin-left: 2px;
 }
 
 .col-item-left {
@@ -139,6 +146,7 @@ select {
   font-size: 13.5px;
   height: 20px;
   padding: 1px 3px;
+  margin: 0;
   border: 1px solid #7f9db9;
   background-color: #ffffff;
 }
@@ -191,9 +199,7 @@ textarea#comments {
 }
 
 hr.divider {
-  border: 0;
-  border-top: 1px solid #777777;
-  border-bottom: 1px solid #ffffff;
+  border: 1px black solid;
   margin: 6px 0 8px 55px;
   width: 476px;
 }
